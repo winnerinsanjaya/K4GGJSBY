@@ -9,7 +9,7 @@ public class KnockbackTrigger : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-
+            Debug.Log("oke");
             PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
             if (playerMovement != null)
             {

@@ -27,6 +27,7 @@ public class GroundDetect : MonoBehaviour
     {
         if (collision.tag == "Ground")
         {
+            playerMovement.LandSound();
             playerMovement.airCount = 0;
             playerMovement.isGrounded = true;
             Debug.Log("isGrounded");
